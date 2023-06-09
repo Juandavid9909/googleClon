@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
 
+  @Input()
+  currentTermValue: any;
+
+  @Input()
+  rightIcon: any;
+
+  constructor() {
+    this.rightIcon = "true";
+  }
 }
