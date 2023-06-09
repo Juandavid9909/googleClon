@@ -1,6 +1,7 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from "@angular/material/icon";
 import { NgModule } from '@angular/core';
 
@@ -22,7 +23,8 @@ import { SearchComponent } from './components/search/search.component';
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
